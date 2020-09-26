@@ -1,10 +1,3 @@
-/**
- * Provided by NeatTeam #1943's software team
- * 
- * github : https://github.com/NeatTeam1943
- * website: https://neatteam1943.com
- */
-
 package com.neatteam1943.utils;
 
 import org.jfree.chart.ChartFactory;
@@ -25,10 +18,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * PIDGraph offers to visually present your PID subsystem's state over time
- * 
- * @author Guy Avital <neatteamsoftware @ gmail.com>
+ * PIDFGraph offers to visually present your PIDF subsystem's state over time
+ *
+ * @author Guy Avital
  * @version 1.0.0
+ * @see <a href="https://github.com/NeatTeam1943">Github</a>
+ * @see <a href="https://neatteam1943.com">Website</a>
  */
 public class PIDFGraph {
 
@@ -107,9 +102,9 @@ public class PIDFGraph {
 
     /**
      * Configure resolution for the graph final PNG
-     * 
-     * @param width  Corresponds with {@link graphWidth}
-     * @param height Corresponds with {@link graphHeight}
+     *
+     * @param width  Corresponds with {@link #graphWidth}
+     * @param height Corresponds with {@link #graphHeight}
      */
     public static void configResolution(int width, int height) {
         graphWidth = width;
@@ -118,10 +113,10 @@ public class PIDFGraph {
 
     /**
      * Configure kP, kI and kD terms, excluding kF
-     * 
-     * @param kP Corresponds with {@link p}
-     * @param kI Corresponds with {@link i}
-     * @param kD Corresponds with {@link d}
+     *
+     * @param kP Corresponds with {@link #p}
+     * @param kI Corresponds with {@link #i}
+     * @param kD Corresponds with {@link #d}
      */
     public static void config(double kP, double kI, double kD) {
         p = kP;
@@ -134,12 +129,12 @@ public class PIDFGraph {
     }
 
     /**
-     * Extends {@link config} with a kF term
-     * 
-     * @param kP Corresponds with {@link p}
-     * @param kI Corresponds with {@link i}
-     * @param kD Corresponds with {@link d}
-     * @param kF Corresponds with {@link f}
+     * Extends {@link #config} with a kF term
+     *
+     * @param kP Corresponds with {@link #p}
+     * @param kI Corresponds with {@link #i}
+     * @param kD Corresponds with {@link #d}
+     * @param kF Corresponds with {@link #f}
      */
     public static void config(double kP, double kI, double kD, double kF) {
         config(kP, kI, kD);
@@ -150,9 +145,9 @@ public class PIDFGraph {
 
     /**
      * Configure the target your system aspires to
-     * 
-     * @param setpoint  Corresponds with {@link setpoint}
-     * @param tolerance Corresponds with {@link tolerance}
+     *
+     * @param setpoint  Corresponds with {@link #setpoint}
+     * @param tolerance Corresponds with {@link #tolerance}
      */
     public static void configTarget(double setpoint, double tolerance) {
         PIDFGraph.setpoint = setpoint;
@@ -161,8 +156,8 @@ public class PIDFGraph {
 
     /**
      * Get kP term
-     * 
-     * @return {@link p}
+     *
+     * @return {@link #p}
      */
     public static double getP() {
         return p;
@@ -170,8 +165,8 @@ public class PIDFGraph {
 
     /**
      * Set kP term
-     * 
-     * @param value New value for {@link p}
+     *
+     * @param value New value for {@link #p}
      */
     public static void setP(double value) {
         p = value;
@@ -179,8 +174,8 @@ public class PIDFGraph {
 
     /**
      * Get kI term
-     * 
-     * @return {@link i}
+     *
+     * @return {@link #i}
      */
     public static double getI() {
         return i;
@@ -188,8 +183,8 @@ public class PIDFGraph {
 
     /**
      * Set kI term
-     * 
-     * @param value New value for {@link i}
+     *
+     * @param value New value for {@link #i}
      */
     public static void setI(double value) {
         i = value;
@@ -197,8 +192,8 @@ public class PIDFGraph {
 
     /**
      * Get kD term
-     * 
-     * @return {@link d}
+     *
+     * @return {@link #d}
      */
     public static double getD() {
         return d;
@@ -206,8 +201,8 @@ public class PIDFGraph {
 
     /**
      * Set kD term
-     * 
-     * @param value New value for {@link d}
+     *
+     * @param value New value for {@link #d}
      */
     public static void setD(double value) {
         d = value;
@@ -215,8 +210,8 @@ public class PIDFGraph {
 
     /**
      * Get kF term
-     * 
-     * @return {@link f}
+     *
+     * @return {@link #f}
      */
     public static double getF() {
         return f;
@@ -224,8 +219,8 @@ public class PIDFGraph {
 
     /**
      * Set kF term
-     * 
-     * @param value New value for {@link f}
+     *
+     * @param value New value for {@link #f}
      */
     public static void setF(double value) {
         f = value;
@@ -233,8 +228,8 @@ public class PIDFGraph {
 
     /**
      * Get setpoint
-     * 
-     * @return {@link setpoint}
+     *
+     * @return {@link #setpoint}
      */
     public static double getSetpoint() {
         return setpoint;
@@ -242,8 +237,8 @@ public class PIDFGraph {
 
     /**
      * Set setpoint
-     * 
-     * @param value New value for {@link setpoint}
+     *
+     * @param value New value for {@link #setpoint}
      */
     public static void setSetpoint(double value) {
         setpoint = value;
@@ -251,8 +246,8 @@ public class PIDFGraph {
 
     /**
      * Get tolerance
-     * 
-     * @return {@link tolerance}
+     *
+     * @return {@link #tolerance}
      */
     public static double getTolerance() {
         return tolerance;
@@ -260,8 +255,8 @@ public class PIDFGraph {
 
     /**
      * Set tolerance
-     * 
-     * @param value New value for {@link tolerance}
+     *
+     * @param value New value for {@link #tolerance}
      */
     public static void setTolerance(double value) {
         tolerance = value;
@@ -269,8 +264,8 @@ public class PIDFGraph {
 
     /**
      * Get leap
-     * 
-     * @return {@link leap}
+     *
+     * @return {@link #leap}
      */
     public static double getLeap() {
         return leap;
@@ -278,8 +273,8 @@ public class PIDFGraph {
 
     /**
      * Set leap
-     * 
-     * @param value New value for {@link leap}
+     *
+     * @param value New value for {@link #leap}
      */
     public static void setLeap(double value) {
         leap = value;
@@ -287,7 +282,7 @@ public class PIDFGraph {
 
     /**
      * Add a new value regardless of current stream
-     * 
+     *
      * @param value System state
      * @param time  Current time (By your consideration)
      */
@@ -297,7 +292,7 @@ public class PIDFGraph {
 
     /**
      * Add new value for the dataset
-     * 
+     *
      * @param value Current system state
      */
     public static void add(double value) {
@@ -307,7 +302,7 @@ public class PIDFGraph {
 
     /**
      * Use JFreeChart to create a graph using the dataset
-     * 
+     *
      * @return Newly created graph
      */
     private static JFreeChart createGraph() {
@@ -317,7 +312,7 @@ public class PIDFGraph {
 
     /**
      * Configure the graph (The visual side)
-     * 
+     *
      * @return Completely configured graph
      */
     private static JFreeChart getGraph() {
@@ -328,7 +323,7 @@ public class PIDFGraph {
         ValueMarker maxToleranceMarker = new ValueMarker(setpoint + tolerance); // maximum tolerance marker line
 
         BasicStroke dashedStroke = new BasicStroke(2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 1.0f,
-                new float[] { 10.0f, 15.0f }, 0.0f); // dashed stroke for the tolerance markers
+                new float[]{10.0f, 15.0f}, 0.0f); // dashed stroke for the tolerance markers
 
         XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer(true, false); // line renderer (used to change paints)
         renderer.setSeriesPaint(0, new Color(0x1F77B4)); // state function paint
@@ -341,7 +336,7 @@ public class PIDFGraph {
 
         // set strokes for the marker lines
         setpointMarker.setStroke(new BasicStroke(2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND, 1.0f,
-                new float[] { 30.0f, 10.0f }, 0.0f));
+                new float[]{30.0f, 10.0f}, 0.0f));
         minToleranceMarker.setStroke(dashedStroke);
         maxToleranceMarker.setStroke(dashedStroke);
 
@@ -368,7 +363,7 @@ public class PIDFGraph {
 
     /**
      * Saves a graph PNG and a datasheet
-     * 
+     *
      * @param path Directory to use to save the files
      * @throws IOException If occurred an error while handling files
      */
