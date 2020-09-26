@@ -16,4 +16,4 @@ Open your robot code inside vscode and then:
 5. Run a build to verify the installation
 
 # Docs
-()[https://neatteam1943.com/docs/Utils]
+https://neatteam1943.com/docs/Utils
