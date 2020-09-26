@@ -53,7 +53,7 @@ public class PIDFGraphExample extends PIDCommand {
 
       // save the generated graph and datasheet inside deploy directory
       // also possible using a flash drive
-      // see https://www.chiefdelphi.com/t/anyone-used-a-roborio-usb-port-for-a-flash-drive/140171/2
+      // see <a href="https://www.chiefdelphi.com/t/anyone-used-a-roborio-usb-port-for-a-flash-drive/140171/2">this chiefdelphi post</a>
       try {
         PIDFGraph.save(Filesystem.getDeployDirectory().toPath().toString());
       } catch (IOException e) {
