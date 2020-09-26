@@ -139,8 +139,6 @@ public class PIDFGraph {
     public static void config(double kP, double kI, double kD, double kF) {
         config(kP, kI, kD);
         f = kF;
-
-        setup();
     }
 
     /**
