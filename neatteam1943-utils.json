@@ -1,0 +1,21 @@
+{
+    "fileName": "PIDGraph.json",
+    "name": "PIDGraph",
+    "version": "1.0.0",
+    "uuid": "786fec83-ce54-40c7-8bc7-927bd8b8dfcb",
+    "mavenUrls": [
+        "https://raw.githubusercontent.com/NeatTeam1943/Utils/mvn-repo/java/"
+    ],
+    "jsonUrl": [
+        "https://raw.githubusercontent.com/NeatTeam1943/Utils/mvn-repo/PIDGraph.json"
+    ],
+    "javaDependencies": [
+        {
+            "groupId": "com.neatteam1943",
+            "artifactId": "Utils",
+            "version": "1.0.0"
+        }
+    ],
+    "jniDependencies": [],
+    "cppDependencies": []
+}
